@@ -1,19 +1,150 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
+
 <head>
+<meta charset="UTF-8">
 <title>SpeedyBite</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#0f0f0f;
+color:white;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+background:black;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+color:#ff3c00;
+}
+
+nav a{
+margin:0 15px;
+color:white;
+text-decoration:none;
+}
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:60px;
+}
+
+.hero img{
+width:400px;
+border-radius:20px;
+}
+
+.hero-text h1{
+font-size:60px;
+color:#ff3c00;
+}
+
+.btn{
+background:#ff3c00;
+padding:12px 25px;
+border-radius:10px;
+text-decoration:none;
+color:white;
+}
+
+.menu{
+padding:40px;
+text-align:center;
+}
+
+.menu-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.card{
+background:#1b1b1b;
+padding:20px;
+border-radius:15px;
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+}
+
+.price{
+color:#ff3c00;
+font-size:20px;
+}
+
+</style>
+
 </head>
 
-<body style="font-family:Arial;text-align:center">
+<body>
 
-<h1>🍔 SpeedyBite</h1>
-<p>Bienvenue sur mon fast-food</p>
+<header>
+<div class="logo">🍔 SpeedyBite</div>
 
-<h2>Menu</h2>
+<nav>
+<a href="#">Accueil</a>
+<a href="#">Menu</a>
+<a href="#">Contact</a>
+</nav>
+</header>
 
-<p>Burger Classic - 6€</p>
-<p>Menu Complet - 9€</p>
-<p>Chicken Burger - 7€</p>
+
+<section class="hero">
+
+<div class="hero-text">
+<h1>SpeedyBite</h1>
+<p>Les meilleurs burgers en ville</p>
+
+<a class="btn" href="#">Commander</a>
+
+</div>
+
+<img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd">
+
+</section>
+
+
+<section class="menu">
+
+<h2>Notre Menu</h2>
+
+<div class="menu-grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+<h3>Burger Classic</h3>
+<p class="price">8.99€</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+<h3>Burger Double</h3>
+<p class="price">12.99€</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+<h3>Menu Frites</h3>
+<p class="price">5.99€</p>
+</div>
+
+</div>
+
+</section>
 
 </body>
 </html>
